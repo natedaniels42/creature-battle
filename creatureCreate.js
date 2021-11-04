@@ -1,3 +1,5 @@
+const axios = require('axios');
+
 const creatureCreate = async () => {
     const random1 = Math.floor(Math.random() * 140);
     const random2 = Math.floor(Math.random() * 140);
@@ -12,6 +14,7 @@ const creatureCreate = async () => {
     creature1.weapon = weapon1;
     creature2 = creature2.data;
     creature2.weapon = weapon2;
+    return { creature1, creature2 };
 }
 
 module.exports = {
