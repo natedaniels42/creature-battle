@@ -26,3 +26,7 @@ while (both_alive)
     both_alive = Combat(creature1, creature2);
     both_alive = Combat(creature2, creature1);
 }
+
+module.exports = {
+    Combat
+};
