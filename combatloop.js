@@ -2,21 +2,19 @@ function Combat(C1, C2)
 {
     console.log(C2.name, "attacks!");
 
-    C1.lifepoints -= C2.weapon.attack;
+    let damage = Math.floor(C2.weapon.attack*Math.random());
 
-    console.log(C1.name, "takes", C2.weapon.attack, "points of damage!");
+    C1.lifepoints -= damage;
+
+    console.log(C1.name, "takes", damage, "points of damage!");
     
     if (C1.lifepoints <= 0)
     {
         console.log(C1.name, "has perished!");
         console.log(C2.name, "wins!");
-        
-        setTimeout(() => {  console.log(); }, 1000);
 
         return false;
     }
-        
-    setTimeout(() => {  console.log(); }, 200);
 
     return true;
 }
