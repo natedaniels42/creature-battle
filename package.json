@@ -1,0 +1,24 @@
+{
+  "name": "creature-battle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natedaniels42/creature-battle.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/natedaniels42/creature-battle/issues"
+  },
+  "homepage": "https://github.com/natedaniels42/creature-battle#readme",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "prompt-sync": "^4.2.0"
+  }
+}
