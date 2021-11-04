@@ -1,28 +1,23 @@
-let both_alive = true;
+function Combat(C1, C2)
+{
+    console.log(C2.name, "attacks!");
+
+    C1.lifepoints -= C2.weapon.attack;
+
+    console.log(C1.name, "takes", C2.weapon.attack, "points of damage!");
+    
+    if (C1.lifepoints <= 0)
+    {
+        console.log(C1.name, "has perished!");
+        console.log(C2.name, "wins!");
+    }
+}
 
 let creature1 = {};
 let creature2 = {};
 
 while (true)
 {
-    console.log(creature2.name, "attacks!");
-
-    creature1.lifepoints -= creature2.attack + creature2.weapon.attack;
-
-    console.log(creature1.name, "takes", creature2.attack + creature2.weapon.attack, "points of damage!");
-    
-    if (creature1.lifepoints <= 0)
-    {
-        console.log(creature1.name, "has perished!");
-        break;
-    }
-
-    creature2.lifepoints -= creature1.attack + creature1.weapon.attack;
-    
-    if (creature2.lifepoints <= 0)
-    {
-        console.log(creature2.name, "has perished!");
-        break;
-    }
-
+    Combat(creature1, creature2);
+    Combat(creature2, creature1);
 }
