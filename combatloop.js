@@ -10,8 +10,13 @@ function Combat(C1, C2)
     {
         console.log(C1.name, "has perished!");
         console.log(C2.name, "wins!");
+        
+        setTimeout(() => {  console.log(); }, 1000);
+
         return false;
     }
+        
+    setTimeout(() => {  console.log(); }, 200);
 
     return true;
 }
