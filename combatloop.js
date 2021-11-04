@@ -16,16 +16,16 @@ function Combat(C1, C2)
     return true;
 }
 
-let creature1 = {};
-let creature2 = {};
+// let creature1 = {};
+// let creature2 = {};
 
-let both_alive = true;
+// let both_alive = true;
 
-while (both_alive)
-{
-    both_alive = Combat(creature1, creature2);
-    both_alive = Combat(creature2, creature1);
-}
+// while (both_alive)
+// {
+//     both_alive = Combat(creature1, creature2);
+//     both_alive = Combat(creature2, creature1);
+// }
 
 module.exports = {
     Combat
