@@ -10,6 +10,8 @@ const playGame = async () => {
         if (alive) {
             await Combat(creature2, creature1);
         }
+        const stopper = await setTimeout(() => {  console.log(); }, 5000);
+        await clearTimeout(stopper);
     }
 
 }
