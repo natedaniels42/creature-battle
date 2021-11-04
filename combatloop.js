@@ -11,13 +11,13 @@ function Combat(C1, C2)
     if (C1.lifepoints <= 0)
     {
         console.log(C1.name, "has perished!");
-        console.log(C2.name, "wins with", C2.lifepoints, "left!");
+        console.log(C2.name, "wins with", C2.lifepoints, "health left!");
 
         return false;
     }
 
     console.log(C1.name, "health:", C1.lifepoints);
-    
+
     return true;
 }
 
