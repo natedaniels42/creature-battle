@@ -13,9 +13,13 @@ const playGame = async () => {
         if (alive1) {
             alive2 = await Combat(creature2, creature1);
         }
-        await prompt('Press enter to continue');
+        if (alive1 && alive2) {
+            await prompt('Press enter to continue');
+        } else {
+            const endGame = prompt("would you like to play again? Type Y for Yes or N for No:");
+            endGame.toLowerCase() === 'y' ? playGame() : console.log('Thanks for playing!');
+        }
     }
-
 }
 
 playGame();
